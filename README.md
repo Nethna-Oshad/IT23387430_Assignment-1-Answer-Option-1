@@ -1,0 +1,131 @@
+# 🤖 Automated Testing: Singlish to Sinhala Transliteration
+
+## 📝 Project Overview
+
+This project automates UI testing for a **Singlish to Sinhala Chat Translator** web application using Playwright.
+It performs **data-driven negative testing** with over 50 test scenarios to validate:
+
+* Transliteration accuracy
+* UI responsiveness
+* Error handling
+
+The system reads test inputs from an Excel file and validates outputs directly from the web interface.
+
+---
+
+## 📂 Repository
+
+GitHub Repository:
+https://github.com/Nethna-Oshad/IT23387430_Assignment-1-Answer-Option-1.git
+
+---
+
+## 🏗️ Project Structure
+
+```text
+IT23387430/
+│
+├── it23387430_automation.py     # Main Playwright automation script  
+├── IT23387430_Test_cases.xlsx   # Excel file with test data and expected results  
+├── IT23387430_Requirements.txt # Required Python dependencies  
+└── README.md                   # Project documentation  
+```
+
+---
+
+## 🛠️ Technologies Used
+
+* **Language**: Python 3.12.9
+* **Automation Framework**: Playwright (Web UI Automation)
+* **Data Handling**: OpenPyXL (Excel read/write operations)
+
+---
+
+## 🚀 Installation & Setup
+
+### 1️⃣ Navigate to Project Folder
+
+```bash
+cd "\IT23387430"
+```
+
+### 2️⃣ Install Dependencies
+
+```bash
+pip install -r IT23387430_Requirements.txt
+```
+
+### 3️⃣ Install Playwright Browsers
+
+```bash
+playwright install
+```
+
+---
+
+## 💻 How to Run
+
+Run the automated test suite using the following command:
+
+```bash
+python it23387430_automation.py --excel "C:IT23387430\IT23387430_Test_cases.xlsx" --url "https://www.pixelssuite.com/chat-translator" --wait-ms 25000 --type-delay-ms 80 --slow-mo-ms 200 --save-every 1
+```
+
+---
+
+## 📊 Output & Validation
+
+* **Actual Output**: Retrieved dynamically from the web application
+* **Expected Output**: Loaded from Excel test cases
+* **Validation**:
+
+  * PASS → If actual output matches expected output
+  * FAIL → If there is any mismatch
+
+Results are updated directly into the Excel file in real-time.
+
+---
+
+## 🧪 Test Coverage
+
+This test suite includes **50 Negative Test Cases**, covering:
+
+* Mixed language inputs (Singlish + English)
+* Real-world scenarios (banking, travel, daily conversations)
+* Numbers, dates, and timestamps
+* Emojis and special characters
+* Spelling variations
+* System-related edge cases
+
+---
+
+## 📁 File Paths (Local Setup)
+
+* Excel File:
+  `IT23387430\IT23387430_Test_cases.xlsx`
+
+* Requirements File:
+  `IT23387430\IT23387430_Requirements.txt`
+
+* Automation Script:
+  `IT23387430\it23387430_automation.py`
+
+---
+
+## ⚙️ Notes
+
+* Ensure Python **3.12.9** is installed
+* Internet connection is required for web testing
+* Playwright browsers must be installed before execution
+
+---
+
+## 👨‍💻 Author
+
+**Nethna Oshad**
+
+---
+
+## 📌 Conclusion
+
+This project demonstrates a **robust automated UI testing approach** using Playwright with Excel-driven test cases, ensuring accuracy and reliability in Singlish to Sinhala transliteration systems.
